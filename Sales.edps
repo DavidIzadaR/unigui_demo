@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper Version="9.9.999.0">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ConnectionStringInAppConfig="False" DetectTPTInheritance="True">
+    <Connection ConnectionString="Data Source=localhost;Initial Catalog=Sales;Integrated Security=True;Persist Security Info=True" Provider="System.Data.SqlClient" />
+    <Generation />
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Pluralize" />
+      <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" AddConstraintColumnsToNavigationPropertyName="False" RemoveUnderscores="True" RemoveInvalidCharacters="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Singularize" />
+      <Property RemoveUnderscores="True" RemoveInvalidCharacters="True" CodeCase="Capitalized" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="False" TargetSchema="dbo" TargetProviderName="System.Data.SqlClient">
+      <TargetServer Server="SQL Server" />
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="Diagram1" DefaultDiagram="True" />
+    </Diagrams>
+    <Templates>
+      <Template Name="Attribute-mapped Entity Classes" Description="Use this template to generate attribute-mapped classes which are TEntity descendants and fully managed by a data context." Enabled="True" PredefinedTemplateName="AttributeMappedEntity">
+        <ed:Property Name="ModelNameAsFilePrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="Output" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=9.9.999.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="OutputNameForMapping" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Mapping</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForClasses" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Classes</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForLINQ" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Linq</string>
+        </ed:Property>
+        <ed:Property Name="OutputNameForContext" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>Context</string>
+        </ed:Property>
+        <ed:Property Name="MetaModelNameSuffix" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+      </Template>
+    </Templates>
+    <AttributeAssemblies />
+  </ModelSettings>
+</EntityDeveloper>

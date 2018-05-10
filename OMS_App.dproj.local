@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/09/27 10:34:51.000.097,=C:\bitbucket\unigui-cookbook\Samples\Hybrid3\Spring.inc</Transaction>
+    <Transaction>2017/09/27 11:03:37.000.384,=C:\bitbucket\unigui-cookbook\Samples\Hybrid3\Unit1.pas</Transaction>
+    <Transaction>2017/09/27 11:03:49.000.571,C:\bitbucket\unigui-cookbook\Samples\Hybrid3\SpringExtension.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid3\Unit1.pas</Transaction>
+    <Transaction>2017/10/24 09:38:07.000.974,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Hybrid3.dproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Hybrid4.dproj</Transaction>
+    <Transaction>2017/10/24 09:38:45.000.606,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Hybrid.dproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Hybrid4.dproj</Transaction>
+    <Transaction>2017/10/24 09:41:33.000.916,=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.pas</Transaction>
+    <Transaction>2017/10/24 09:41:52.000.073,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\OrdersDM.pas</Transaction>
+    <Transaction>2017/10/24 09:41:52.000.073,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.dfm=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\OrdersDM.dfm</Transaction>
+    <Transaction>2017/10/24 12:20:10.000.998,=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.pas</Transaction>
+    <Transaction>2017/10/24 12:20:25.000.891,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.dfm=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\UsersDM.dfm</Transaction>
+    <Transaction>2017/10/24 12:20:25.000.891,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\UsersDM.pas</Transaction>
+    <Transaction>2017/10/24 13:05:43.000.520,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\reportDM.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\SalesReportDM.pas</Transaction>
+    <Transaction>2017/10/24 13:05:43.000.520,C:\bitbucket\unigui-cookbook\Samples\Hybrid4\reportDM.dfm=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\SalesReportDM.dfm</Transaction>
+    <Transaction>2017/10/27 13:20:33.000.428,=C:\bitbucket\unigui-cookbook\Samples\Hybrid4\Unit1.pas</Transaction>
+    <Transaction>2017/10/30 10:24:43.000.245,=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\Unit1.pas</Transaction>
+    <Transaction>2017/10/30 10:25:13.000.231,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\FormDesignerUnit.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\Unit1.pas</Transaction>
+    <Transaction>2018/05/02 13:13:14.000.796,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\Hybrid.dproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridApp.dproj</Transaction>
+    <Transaction>2018/05/02 13:13:53.000.888,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\FormDesignerUnit.pas=</Transaction>
+    <Transaction>2018/05/04 13:03:20.000.322,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\OMS_App.dproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridApp.dproj</Transaction>
+    <Transaction>2018/05/08 10:39:25.000.786,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_dOperatorsForm.dfm=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_dUsersForm.dfm</Transaction>
+    <Transaction>2018/05/08 10:39:25.000.786,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_dOperatorsForm.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_dUsersForm.pas</Transaction>
+    <Transaction>2018/05/08 10:39:52.000.143,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_mOperatorsForm.pas=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_mUsersForm.pas</Transaction>
+    <Transaction>2018/05/08 10:39:52.000.143,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_mOperatorsForm.dfm=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\_mUsersForm.dfm</Transaction>
+    <Transaction>2018/05/09 10:14:12.830,=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Server.Registration.pas</Transaction>
+    <Transaction>2018/05/09 10:17:54.427,=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Server.Resources.pas</Transaction>
+    <Transaction>2018/05/09 10:17:54.459,=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Session.Registration.pas</Transaction>
+    <Transaction>2018/05/09 10:23:06.023,=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Server.DataServices.FireDAC.pas</Transaction>
+    <Transaction>2018/05/09 10:23:06.052,=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Session.RegServices.Default.pas</Transaction>
+    <Transaction>2018/05/09 10:23:43.165,C:\bitbucket\unigui-cookbook\Demo\IQWeb.Server.DataServices.FireDAC.pas=</Transaction>
+    <Transaction>2018/05/09 10:26:27.373,=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Session.RegServices.pas</Transaction>
+    <Transaction>2018/05/09 10:36:42.216,C:\bitbucket\unigui-cookbook\Demo\Server.Registration.pas=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Server.Registration.pas</Transaction>
+    <Transaction>2018/05/09 10:37:05.275,C:\bitbucket\unigui-cookbook\Demo\Server.Resources.pas=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Server.Resources.pas</Transaction>
+    <Transaction>2018/05/09 10:46:58.398,C:\bitbucket\unigui-cookbook\Demo\Session.RegServices.pas=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Session.RegServices.pas</Transaction>
+    <Transaction>2018/05/09 10:53:57.477,C:\bitbucket\unigui-cookbook\Demo\Session.Registration.pas=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Session.Registration.pas</Transaction>
+    <Transaction>2018/05/09 10:55:49.531,C:\bitbucket\unigui-cookbook\Demo\Session.RegServices.Default.pas=C:\bitbucket\unigui-cookbook\Demo\IQWeb.Session.RegServices.Default.pas</Transaction>
+    <Transaction>2018/05/09 11:35:03.455,C:\bitbucket\unigui-cookbook\Demo\Session.Registration.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

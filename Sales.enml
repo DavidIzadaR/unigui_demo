@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Database="Sales" Name="SalesModel" EntityContextName="SalesContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="24bf6e3a-187c-41cf-b0c7-7753f292a1c5" xmlns="http://schemas.devart.com/entitydac/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=localhost;Initial Catalog=Sales;Integrated Security=True;Persist Security Info=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Customers" Member="Customers">
+    <Type Name="Customer" ed:Guid="95356453-3677-4214-b2d5-5709fbfa89fa">
+      <Column Name="Id" Type="Integer" AutoSync="OnInsert" DbType="INT NOT NULL IDENTITY" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="c7c470fe-3d3f-43d3-a29e-4ce7a1dbfb55" />
+      <Column Name="Name" Type="String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="c3ed5c1b-694e-4a54-8689-11fac09130bf" />
+      <Association Name="Customer_Order" ed:AssociationGuid="3471f066-e854-4edd-b942-0181f310df4b" Member="Orders" ed:Guid="e0a59cf6-f93b-4b67-a7e1-e0448e822287" ThisKey="Id" OtherKey="Customerid" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Items" Member="Items">
+    <Type Name="Item" ed:Guid="71b0c8d9-76a9-4543-97aa-6701bfcdd672">
+      <Column Name="Orderid" Type="Integer" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="26f2be92-2871-4b6a-b9cb-bb150fde84c9" />
+      <Column Name="Productid" Type="Integer" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="8a01fa34-f35e-4c23-b762-6717b8dc1662" />
+      <Column Name="Quantity" Type="Integer" DbType="INT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="5bd21659-8902-45a7-a3d8-7fd789f535ff" />
+      <Association Name="Order_Item" ed:AssociationGuid="cefdeabb-d818-4ca0-9df1-50af87e3f8ff" Member="Order" ed:Guid="54cc20aa-f027-432b-84b8-4e286143cba4" ThisKey="Orderid" OtherKey="Id" Type="Order" DeleteRule="Cascade" Cascade="true" DeleteOnNull="true" IsForeignKey="true" />
+      <Association Name="Product_Item" ed:AssociationGuid="300fb401-251c-40f4-b82b-5e4848cb50c3" Member="Product" ed:Guid="181e1147-366c-4439-8051-19de2d475789" ThisKey="Productid" OtherKey="Id" Type="Product" DeleteRule="Cascade" Cascade="true" DeleteOnNull="true" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Orders" Member="Orders">
+    <Type Name="Order" ed:Guid="3cdda521-f978-4c6c-97c8-528869a6a8d5">
+      <Column Name="Id" Type="Integer" AutoSync="OnInsert" DbType="INT NOT NULL IDENTITY" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="4bdbcc38-daf5-45d6-aa69-5e364f5a982c" />
+      <Column Name="Customerid" Type="Integer" DbType="INT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="7cdb16ed-ff15-414b-8402-108a28df5f07" />
+      <Column Name="Posted" Type="DateTime" DbType="DATETIME2 NOT NULL" CanBeNull="false" UpdateCheck="Never" DefaultValue="getdate()" ed:ValidateRequired="true" ed:Guid="e1e14957-c849-442c-a329-a975358731a2" />
+      <Column Name="Paid" Type="DateTime" DbType="DATETIME2" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="6cdfced6-22ba-4d79-8e4e-807c20769c9e" />
+      <Association Name="Order_Item" ed:AssociationGuid="cefdeabb-d818-4ca0-9df1-50af87e3f8ff" Member="Items" ed:Guid="dfb6f60f-320b-4467-bdad-a2ab706341ef" ThisKey="Id" OtherKey="Orderid" Type="Item" />
+      <Association Name="Customer_Order" ed:AssociationGuid="3471f066-e854-4edd-b942-0181f310df4b" Member="Customer" ed:Guid="d6e28e30-8b97-4c12-b6f1-ad0a68c72ec7" ThisKey="Customerid" OtherKey="Id" Type="Customer" DeleteRule="Cascade" Cascade="true" DeleteOnNull="true" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Products" Member="Products">
+    <Type Name="Product" ed:Guid="ba981021-b416-4463-8930-290085960204">
+      <Column Name="Id" Type="Integer" AutoSync="OnInsert" DbType="INT NOT NULL IDENTITY" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="2468b9c0-9eb6-40aa-8519-2e2b0cc592cd" />
+      <Column Name="Description" Type="String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="69e60097-bf20-42eb-a326-e57822f48af6" />
+      <Column Name="Price" Type="BCD" DbType="MONEY" CanBeNull="true" UpdateCheck="Never" DefaultValue="0" Precision="19" Scale="4" ed:ValidateRequired="false" ed:Guid="e9813e22-98f9-4cef-916b-4356c1ef3ff9" />
+      <Association Name="Product_Item" ed:AssociationGuid="300fb401-251c-40f4-b82b-5e4848cb50c3" Member="Items" ed:Guid="10c3977a-67e4-4f55-9721-2bccee6c8f2d" ThisKey="Id" OtherKey="Productid" Type="Item" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User" ed:Guid="438228cc-5dfa-46eb-9b39-aaa199f21948">
+      <Column Name="Username" Type="String" DbType="VARCHAR(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" MaxLength="16" ed:ValidateMaxLength="16" ed:ValidateRequired="true" ed:Guid="adf24260-5a73-4a9f-a436-a98d06d0ef82" />
+      <Column Name="Password" Type="String" DbType="VARCHAR(32) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="32" ed:ValidateMaxLength="32" ed:ValidateRequired="true" ed:Guid="3fa6a9d3-171f-408b-be03-f852e7ac3c04" />
+      <Column Name="Admin" Type="Boolean" DbType="BIT" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="false" ed:Guid="198e1e5d-f3e4-467c-8a06-481cf29ed466" />
+    </Type>
+  </Table>
+  <Table Name="dbo.viewSales" Member="Viewsales">
+    <Type Name="Viewsale" ed:Guid="136ae952-a3c3-4c1a-bd4c-21dddb749896">
+      <Column Name="CustomerID" Member="Customerid" Type="Integer" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="52b12953-64fc-49fc-ba69-4b4824116a80" />
+      <Column Name="Customer" Type="String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="a76d09a3-294d-4f82-a635-655ab286f7b9" />
+      <Column Name="OrderID" Member="Orderid" Type="Integer" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="7e372f65-04bb-42e5-bc3b-c0e81fdefa90" />
+      <Column Name="Posted" Type="DateTime" DbType="DATETIME2 NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="fd548fd5-1d18-4be1-8e9e-cb7c053b88cd" />
+      <Column Name="ProductID" Member="Productid" Type="Integer" DbType="INT NOT NULL" IsPrimaryKey="true" CanBeNull="false" ed:ValidateRequired="true" ed:Guid="a0d3e0da-29e2-48a3-a1cd-bd9b6364f7c6" />
+      <Column Name="Product" Type="String" DbType="VARCHAR(64) NOT NULL" CanBeNull="false" UpdateCheck="Never" MaxLength="64" ed:ValidateMaxLength="64" ed:ValidateRequired="true" ed:Guid="dbc87de5-6d4e-40c5-a39b-3f7d38efd004" />
+      <Column Name="Quantity" Type="Integer" DbType="INT NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="true" ed:Guid="bbaab223-d94b-43db-943b-f005d8e22dfc" />
+      <Column Name="Price" Type="BCD" DbType="MONEY" CanBeNull="true" UpdateCheck="Never" Precision="19" Scale="4" ed:ValidateRequired="false" ed:Guid="b91b7b79-5e0c-4236-841c-c6b55f1cde1e" />
+      <Column Name="Total" Type="BCD" DbType="MONEY" CanBeNull="true" UpdateCheck="Never" Precision="19" Scale="4" ed:ValidateRequired="false" ed:Guid="c1c1b45d-ae7c-4d8c-ae53-bf55de003741" />
+    </Type>
+  </Table>
+</Database>

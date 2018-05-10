@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{051E7CBE-87C3-4E12-B7DA-13BCD3E0466F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="OMS_App.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="OMS_Svc.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="OMS_App">
+        <MSBuild Projects="OMS_App.dproj"/>
+    </Target>
+    <Target Name="OMS_App:Clean">
+        <MSBuild Projects="OMS_App.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OMS_App:Make">
+        <MSBuild Projects="OMS_App.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OMS_Svc">
+        <MSBuild Projects="OMS_Svc.dproj"/>
+    </Target>
+    <Target Name="OMS_Svc:Clean">
+        <MSBuild Projects="OMS_Svc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OMS_Svc:Make">
+        <MSBuild Projects="OMS_Svc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="OMS_App;OMS_Svc"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="OMS_App:Clean;OMS_Svc:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="OMS_App:Make;OMS_Svc:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

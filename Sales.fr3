@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.14" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42969.6841523958" ReportOptions.Description.Text="" ReportOptions.LastChange="42969.698446875" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxSales" DataSetName="main"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo2" Left="287.24428" Top="0" Width="173.85838" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Sales by Customer"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="102.04731" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="frxSales" DataSetName="main" RowCount="0">
+      <TfrxMemoView Name="mainCustomer" Left="7.55906" Top="0" Width="113.3859" Height="18.89765" DataField="Customer" DataSet="frxSales" DataSetName="main" SuppressRepeated="True" Text="[main.&#34;Customer&#34;]"/>
+      <TfrxMemoView Name="mainPosted" Left="132.28355" Top="0" Width="143.62214" Height="18.89765" DataField="Posted" DataSet="frxSales" DataSetName="main" SuppressRepeated="True" Text="[main.&#34;Posted&#34;]"/>
+      <TfrxMemoView Name="mainProduct" Left="283.46475" Top="0" Width="132.28355" Height="18.89765" DataField="Product" DataSet="frxSales" DataSetName="main" Text="[main.&#34;Product&#34;]"/>
+      <TfrxMemoView Name="mainQuantity" Left="423.30736" Top="0" Width="79.37013" Height="18.89765" DataField="Quantity" DataSet="frxSales" DataSetName="main" Text="[main.&#34;Quantity&#34;]"/>
+      <TfrxMemoView Name="mainPrice" Left="514.01608" Top="0" Width="79.37013" Height="18.89765" DataField="Price" DataSet="frxSales" DataSetName="main" HAlign="haRight" Text="[main.&#34;Price&#34;]"/>
+      <TfrxMemoView Name="mainTotal" Left="604.7248" Top="0" Width="113.3859" Height="18.89765" DataField="Total" DataSet="frxSales" DataSetName="main" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[main.&#34;Total&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22.67718" Left="0" Top="185.19697" Width="740.409927">
+      <TfrxMemoView Name="Memo1" Left="665.19728" Top="0" Width="75.5906" Height="18.89765" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

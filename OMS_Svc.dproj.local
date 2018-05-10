@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/05/02 13:08:49.000.903,=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\OrdersDM.pas</Transaction>
+    <Transaction>2018/05/02 13:12:43.000.588,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridApp.dproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridSvc.dproj</Transaction>
+    <Transaction>2018/05/04 13:03:09.000.742,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\OMS_Svc.dproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridSvc.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

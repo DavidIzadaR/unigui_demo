@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/05/02 13:12:33.000.493,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybrid.groupproj=C:\Users\david\Documents\Embarcadero\Studio\Projects\ProjectGroup2.groupproj</Transaction>
+    <Transaction>2018/05/02 13:14:25.000.825,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridPrj.groupproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybrid.groupproj</Transaction>
+    <Transaction>2018/05/04 13:02:58.000.570,C:\bitbucket\unigui-cookbook\Samples\Hybrid5\SmallHybridPrj.groupproj=C:\bitbucket\unigui-cookbook\Samples\Hybrid5\OMS.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\bitbucket\unigui-cookbook\Demo\OMS_App.dproj"/>
+	</Default.Personality>
+</BorlandProject>
